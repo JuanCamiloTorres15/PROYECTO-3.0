@@ -7,73 +7,70 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-
-  <!-- CSS ORIGINAL (NO MODIFICADO) -->
+  <!-- CSS -->
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-md fb-navbar fixed-top">
+<nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="fb-logo" href="#">📘 PROYECTO IA</a>
+    <a class="navbar-brand" href="#">📘 Proyecto IA</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="fb-hero text-center">
-  <div class="container py-5 mt-5">
-    <h1 class="hero-title">
-      Automatización con <span class="text-accent">IA</span>
-    </h1>
-    <p class="hero-subtitle">
-      Automatización de procesos de atención al cliente en el sector gastronómico mediante chatbots.
-    </p>
+<section class="hero d-flex align-items-center text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Automatización con <span class="text-warning">IA</span></h1>
+    <p class="lead">Chatbots para el sector gastronómico</p>
   </div>
 </section>
 
-<!-- INTRODUCCIÓN -->
-<section class="container py-5">
-  <h2 class="fb-view-title mb-4">Introducción</h2>
-  <p>
-    El sector gastronómico enfrenta desafíos debido a la digitalización y al aumento de pedidos en línea. Los métodos tradicionales generan demoras, errores en los pedidos y baja satisfacción del cliente.
-    La inteligencia artificial, mediante chatbots, permite automatizar la atención, ofrecer respuestas inmediatas y mejorar la experiencia del usuario.
-  </p>
-</section>
+<div class="container py-5">
 
-<!-- OBJETIVO GENERAL -->
-<section class="container py-5">
-  <h2 class="fb-view-title mb-4">Objetivo General</h2>
-  <p>
-    Desarrollar un chatbot basado en inteligencia artificial que automatice la atención al cliente en el sector gastronómico, mejorando la eficiencia operativa y la experiencia del usuario.
-  </p>
-</section>
+  <!-- INTRO -->
+  <div class="card p-4 mb-4 shadow-lg">
+    <h3>Introducción</h3>
+    <p>
+      La inteligencia artificial permite automatizar la atención al cliente en el sector gastronómico,
+      mejorando la eficiencia, reduciendo errores y ofreciendo respuestas inmediatas.
+    </p>
+  </div>
 
-<!-- OBJETIVOS ESPECÍFICOS -->
-<section class="container py-5">
-  <h2 class="fb-view-title mb-4">Objetivos Específicos</h2>
-  <ul>
-    <li>Analizar las necesidades del sector gastronómico.</li>
-    <li>Diseñar un chatbot con procesamiento de lenguaje natural.</li>
-    <li>Automatizar pedidos, menús y consultas.</li>
-    <li>Reducir tiempos de respuesta y errores.</li>
-    <li>Mejorar la satisfacción del cliente.</li>
-  </ul>
-</section>
+  <!-- OBJETIVO -->
+  <div class="card p-4 mb-4 shadow-lg">
+    <h3>Objetivo General</h3>
+    <p>
+      Desarrollar un chatbot basado en inteligencia artificial que optimice la atención al cliente en restaurantes.
+    </p>
+  </div>
 
-<!-- ANTECEDENTES -->
-<section class="container py-5">
-  <h2 class="fb-view-title mb-4">Antecedentes</h2>
-  <p>
-    Investigaciones previas evidencian el impacto positivo de la inteligencia artificial en la automatización de procesos empresariales. En particular, los chatbots han sido utilizados para mejorar la atención al cliente, gestionar reservas y optimizar la comunicación en diferentes sectores.
-  </p>
-</section>
+  <!-- CHATBOT DEMO -->
+  <div class="card p-4 mb-4 shadow-lg">
+    <h3>Demo Chatbot</h3>
 
-<!-- JS ORIGINAL (NO MODIFICADO) -->
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="input-group mt-3">
+      <input id="chat-input" class="form-control" placeholder="Escribe tu pedido...">
+      <button class="btn btn-warning" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <!-- CREADORES -->
+  <div class="card p-4 text-center shadow-lg">
+    <h3>Creadores</h3>
+    <p class="fw-bold text-warning">JUAN ANGEL RODRIGUEZ LOAIZA</p>
+    <p class="fw-bold text-warning">JUAN CAMILO TORRES PARRA</p>
+  </div>
+
+</div>
+
+<!-- JS -->
 <script src="app.js"></script>
 
 </body>
