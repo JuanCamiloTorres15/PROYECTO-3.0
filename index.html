@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FOODBOT</title>
+  <title>Proyecto Chatbot Gastronómico</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +11,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-  <!-- Tu CSS -->
+  <!-- CSS ORIGINAL (NO MODIFICADO) -->
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -20,92 +20,61 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-md fb-navbar fixed-top">
   <div class="container">
-    <a class="fb-logo" href="#">🍔 FOODBOT</a>
-
-    <div class="ms-auto d-flex gap-2">
-      <button class="fb-btn-outline">Login</button>
-      <button class="fb-btn-primary">Registro</button>
-      <button class="fb-cart-btn">
-        🛒
-        <span class="fb-cart-badge" id="cart-count">0</span>
-      </button>
-    </div>
+    <a class="fb-logo" href="#">📘 PROYECTO IA</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="fb-hero text-center text-md-start">
+<section class="fb-hero text-center">
   <div class="container py-5 mt-5">
-    <div class="row align-items-center">
-
-      <div class="col-md-6">
-        <span class="hero-badge">🚀 Delivery Inteligente</span>
-
-        <h1 class="hero-title mt-3">
-          Pide comida con <span class="text-accent">IA</span>
-        </h1>
-
-        <p class="hero-subtitle">
-          FOODBOT te recomienda restaurantes y platos automáticamente según tus gustos.
-        </p>
-
-        <div class="hero-actions">
-          <button class="fb-btn-hero-primary" onclick="mostrarRestaurantes()">
-            Ver restaurantes
-          </button>
-        </div>
-      </div>
-
-      <div class="col-md-6 text-center mt-4">
-        <div class="center-bot">🤖</div>
-      </div>
-
-    </div>
+    <h1 class="hero-title">
+      Automatización con <span class="text-accent">IA</span>
+    </h1>
+    <p class="hero-subtitle">
+      Automatización de procesos de atención al cliente en el sector gastronómico mediante chatbots.
+    </p>
   </div>
 </section>
 
-<!-- RESTAURANTES -->
-<section id="restaurantes" class="container py-5">
-  <h2 class="fb-view-title mb-4">Restaurantes</h2>
-
-  <div class="row g-4" id="restaurant-list"></div>
-</section>
-
-<!-- PRODUCTOS -->
-<section id="productos" class="container py-5">
-  <h2 class="fb-view-title mb-4">Menú</h2>
-
-  <div class="row g-4" id="product-list"></div>
-</section>
-
-<!-- CARRITO -->
+<!-- INTRODUCCIÓN -->
 <section class="container py-5">
-  <h2 class="fb-view-title mb-4">Carrito</h2>
-
-  <div id="cart-items"></div>
-
-  <h4 class="mt-3">Total: $<span id="total">0</span></h4>
+  <h2 class="fb-view-title mb-4">Introducción</h2>
+  <p>
+    El sector gastronómico enfrenta desafíos debido a la digitalización y al aumento de pedidos en línea. Los métodos tradicionales generan demoras, errores en los pedidos y baja satisfacción del cliente.
+    La inteligencia artificial, mediante chatbots, permite automatizar la atención, ofrecer respuestas inmediatas y mejorar la experiencia del usuario.
+  </p>
 </section>
 
-<!-- CHATBOT -->
-<button class="fb-chat-toggle" onclick="toggleChat()">
-  💬 Chat
-</button>
+<!-- OBJETIVO GENERAL -->
+<section class="container py-5">
+  <h2 class="fb-view-title mb-4">Objetivo General</h2>
+  <p>
+    Desarrollar un chatbot basado en inteligencia artificial que automatice la atención al cliente en el sector gastronómico, mejorando la eficiencia operativa y la experiencia del usuario.
+  </p>
+</section>
 
-<div class="fb-chatbot-widget" id="chatbot">
-  <div class="chatbot-header">
-    <span>🤖 FOODBOT</span>
-    <button onclick="toggleChat()">✖</button>
-  </div>
+<!-- OBJETIVOS ESPECÍFICOS -->
+<section class="container py-5">
+  <h2 class="fb-view-title mb-4">Objetivos Específicos</h2>
+  <ul>
+    <li>Analizar las necesidades del sector gastronómico.</li>
+    <li>Diseñar un chatbot con procesamiento de lenguaje natural.</li>
+    <li>Automatizar pedidos, menús y consultas.</li>
+    <li>Reducir tiempos de respuesta y errores.</li>
+    <li>Mejorar la satisfacción del cliente.</li>
+  </ul>
+</section>
 
-  <div class="chatbot-messages" id="chat-messages"></div>
+<!-- ANTECEDENTES -->
+<section class="container py-5">
+  <h2 class="fb-view-title mb-4">Antecedentes</h2>
+  <p>
+    Investigaciones previas evidencian el impacto positivo de la inteligencia artificial en la automatización de procesos empresariales. En particular, los chatbots han sido utilizados para mejorar la atención al cliente, gestionar reservas y optimizar la comunicación en diferentes sectores.
+  </p>
+</section>
 
-  <div class="chatbot-input-area">
-    <input id="chat-input" class="chatbot-input" placeholder="Escribe..." />
-    <button class="chatbot-send" onclick="sendMessage()">➤</button>
-  </div>
-</div>
-
+<!-- JS ORIGINAL (NO MODIFICADO) -->
 <script src="app.js"></script>
+
 </body>
 </html>
